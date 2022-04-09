@@ -17,7 +17,9 @@ namespace Calculator
                             Console.WriteLine("Enter a number: ");
 
                             int number1 = int.Parse(Console.ReadLine());
+
                             Console.WriteLine("Enter a second number: ");
+
                             int number2 = int.Parse(Console.ReadLine());
 
                             result = Multiply(number1, number2);
@@ -39,7 +41,10 @@ namespace Calculator
 
         private static int Multiply(int number1, int number2)
         {
-            throw new NotImplementedException();
+         return number1 * number2;
+        }
+        
+            
         }
     }
-}
+
