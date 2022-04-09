@@ -13,10 +13,15 @@ namespace Calculator
                 switch (command)
                 {
                     case "Multiply":
-                        int number1 = int.Parse(Console.ReadLine());
-                        int number2 = int.Parse(Console.ReadLine());
+                        {
+                            Console.WriteLine("Enter a number: ");
 
-                        result = Multiply(number1, number2);
+                            int number1 = int.Parse(Console.ReadLine());
+                            Console.WriteLine("Enter a second number: ");
+                            int number2 = int.Parse(Console.ReadLine());
+
+                            result = Multiply(number1, number2);
+                        }
                         break;
                     case "End":
                         break;
