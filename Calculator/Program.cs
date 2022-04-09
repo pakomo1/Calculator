@@ -8,7 +8,7 @@ namespace Calculator
         {
             string command = Console.ReadLine().ToLower();
 
-            int result = int.MinValue();
+            double result = double.MinValue();
 
             while (command != "End")
             {
@@ -37,15 +37,13 @@ namespace Calculator
                     Console.WriteLine("Invalid command");
                 }
 
-                if(result != int.MinValue)
+                if(result != double.MinValue)
                 {
-                    Console.WriteLine($"Result: {}");
+                    Console.WriteLine($"Result: {result}");
                 }
                 command = Console.ReadLine().ToLower();
 
             }
-
-
             static double Add(double num1, double num2)
             {
 
@@ -56,7 +54,7 @@ namespace Calculator
             }
             static double Divide(double num1, double num2)
             {
-
+                return num1 / num2;
             }
             static double Power(double num1, double num2)
             {
