@@ -14,7 +14,10 @@ namespace Calculator
             {
                 if (command == "add")
                 {
-
+                    Console.WriteLine("Enter a number: ");
+                    int num1 = int.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter another number: ");
+                    int num2 = int.Parse(Console.ReadLine());
                 }
                 else if (command == "subtract")
                 {
@@ -39,7 +42,7 @@ namespace Calculator
 
                 if(result != int.MinValue)
                 {
-                    Console.WriteLine($"Result: {}");
+                    Console.WriteLine($"Result: {result}");
                 }
                 command = Console.ReadLine().ToLower();
 
@@ -48,7 +51,7 @@ namespace Calculator
 
             static double Add(double num1, double num2)
             {
-
+                return num1 + num2;
             }
             static double Subtract(double num1, double num2)
             {
