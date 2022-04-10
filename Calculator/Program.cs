@@ -15,9 +15,9 @@ namespace Calculator
                 if (command == "add")
                 {
                     Console.WriteLine("Enter a number: ");
-                    int num1 = int.Parse(Console.ReadLine());
+                    double num1 = double.Parse(Console.ReadLine());
                     Console.WriteLine("Enter another number: ");
-                    int num2 = int.Parse(Console.ReadLine());
+                    double num2 = double.Parse(Console.ReadLine());
                 }
                 else if (command == "subtract")
                 {
