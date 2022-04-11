@@ -22,7 +22,10 @@ namespace Calculator
                 }
                 else if (command == "divide")
                 {
-
+                    Console.WriteLine("Enter a number: ");
+                    double num1 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter a number: ");
+                    double num2 = double.Parse(Console.ReadLine());
                 }
                 else if (command == "power")
                 {
@@ -40,9 +43,9 @@ namespace Calculator
                 if(result != double.MinValue)
                 {
                     Console.WriteLine($"Result: {result}");
+
                 }
                 command = Console.ReadLine().ToLower();
-
             }
             static double Add(double num1, double num2)
             {
@@ -57,10 +60,6 @@ namespace Calculator
                 return num1 / num2;
             }
             static double Power(double num1, double num2)
-            {
-
-            }
-             static double Multiply(double num1, double num2)
             {
 
             }
