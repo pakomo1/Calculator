@@ -53,8 +53,6 @@ namespace Calculator
                 command = Console.ReadLine().ToLower();
 
             }
-
-
             static double Add(double num1, double num2)
             {
                 return num1 + num2;
@@ -65,7 +63,7 @@ namespace Calculator
             }
             static double Divide(double num1, double num2)
             {
-
+                return num1 / num2;
             }
             static double Power(double num1, double num2)
             {
