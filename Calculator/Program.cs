@@ -29,7 +29,10 @@ namespace Calculator
                 }
                 else if (command == "power")
                 {
-
+                    Console.WriteLine("Enter a number: ");
+                    double num1 = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Enter another number: ");
+                    double num2 = double.Parse(Console.ReadLine());                
                 }
                 else if (command == "multiply")
                 {
@@ -63,7 +66,7 @@ namespace Calculator
             }
             static double Power(double num1, double num2)
             {
-
+                return Math.Pow(num1, num2);
             }
              static double Multiply(double num1, double num2)
             {
