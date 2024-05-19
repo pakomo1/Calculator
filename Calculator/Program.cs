@@ -39,7 +39,8 @@ namespace Calculator
                     Console.WriteLine("Enter a number: ");
                     double num1 = double.Parse(Console.ReadLine());
                     Console.WriteLine("Enter another number: ");
-                    double num2 = double.Parse(Console.ReadLine());                
+                    double num2 = double.Parse(Console.ReadLine());
+					Console.WriteLine("HelloWorld?");                
                 }
                 else if (command == "multiply")
                 {
