@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Calculator
 {
@@ -21,6 +21,7 @@ namespace Calculator
                 }
                 else if (command == "subtract")
                 {
+				//asdasdasd
                     Console.WriteLine("Enter a number: ");
                     double num1 = double.Parse(Console.ReadLine());
                     Console.WriteLine("Enter a number: ");
